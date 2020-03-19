@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservas Barbería Líder</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <form action="" class="formulario">
+       
+       <h1 class="formulario__titulo">Barbería Líder</h1>
+       <h3 class="formulario__subtitulo">Reservas</h3>
+       <p class="formulario__parrafo">Llena este pequeño formulario para agendar tu cita en la barbería.</p>
+       
+        <label for="nombre" class="formulario__label">¿Cual es tu nombre?</label>
+        <input id="cliente" type="text" class="formulario__input" required>
+        
+        
+        <label for="fecha" class="formulario__label">Indica la fecha de tu reserva</label>
+        <input id="fecha" type="date" class="formulario__input" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+        
+        
+        <label for="hora" class="formulario__label">Indica la hora de tu reserva</label>
+        <input id="hora" type="time" class="formulario__input" min="07:00" max="21:00" step="3600" required>
+        
+        <label for="barbero" class="formulario__label">Barbero de preferencia</label>
+        <select id="barbero" name="listabarberos" class="formulario__input">
+            <option value="Barbero Cristóbal">Barbero Cristóbal</option>
+            <option value="Barbero Elis">Barbero Elis</option>
+        </select>
+        
+        <label for="servicios" class="formulario__label">¿Cuál es el servicio que se desea realizar?</label>
+        <select id="servicio" name="listaservicios" class="formulario__input">
+            <option>Corte de Cabello - $12.000</option>
+            <option>Afeitado de la Barba - $12.000</option>
+            <option>Peinado para caballero - $12.000</option>
+            <option>Servicio Facial - $12.000</option>
+            <option>Combo 1 Corte+Barba - $20.000</option>
+            <option>Combo 2 Corte+Barba+Peinado - $30.000</option>
+            <option>Combo 3 Corte+Barba+Facial - $30.000</option>
+            <option>Combo 4 Corte+Barba+Peinado+Facial - $40.000</option>
+            <option>Alineacón de cejas con cuchilla - $5.000</option>
+        </select>
+        
+
+        <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+       <!-- https://api.whatsapp.com/send?phone=573105010573&text=*_Barberia%20Lider_*%20%0AReservas%0A%0A*%C2%BFCual%20es%20tu%20nombre?*%0A"Nombres"%20%0A*Barbero%20de%20preferencia*%0A"Barbero"%20%0A -->
+    </form>
+    <script src="js/form.js"></script>
+</body>
+</html>

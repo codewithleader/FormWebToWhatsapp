@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+.formulario {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+    position: relative;
+    
+    
+    
+}
+.formulario__titulo, .formulario__subtitulo, .formulario__parrafo {
+    text-align: center;
+    margin-top: 0;
+    
+}
+.formulario__titulo, .formulario__subtitulo {
+    color: rgba(0, 0, 0, 0.7);
+    
+}
+.formulario__parrafo {
+    color: rgba(0,0,0,0.5);
+}
+.formulario__input, .formulario__label {
+    display: block;
+    width: 100%;
+    font-size: 1,3em;
+    
+}
+.formulario__input {
+    padding: 10px;
+    background: transparent;
+    /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    
+}
+.formulario__input:focus {
+    /*outline: 1px solid rgba(0,0,0,0.7);*/
+    outline: none;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.7);
+}
+/*.formulario__input:focus + .formulario__label{
+    margin-top: -120px;
+}*/
+.formulario__label {
+    padding-left: 15px;
+    /*position: absolute;*/
+    /*margin-top: -78px;*/
+    /*z-index: -20;*/
+    color: rgba(0,0,0,0.7);
+    /*transition: all 0.2s;*/
+    margin: 2px;
+    
+    
+}
+.formulario__submit {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    width: 50%;
+    font-size: 1,3em;
+    
+}
+
+/*Centrar los campos del formulario (Los input y el boton de Enviar al WhatsApp, que tambien es un input)*/
+
+.formulario__input, .formulario__submit {
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+    
+
+/*.fijar {
+    margin-top: -120px;
+} */

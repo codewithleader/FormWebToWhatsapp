@@ -14,7 +14,7 @@
        <h3 class="formulario__subtitulo">Reservas</h3>
        <p class="formulario__parrafo">Llena este pequeño formulario para agendar tu cita en la barbería.</p>
        
-        <label for="nombre" class="formulario__label">¿Cual es tu nombre?</label>
+        <label for="cliente" class="formulario__label">¿Cual es tu nombre?</label>
         <input id="cliente" type="text" class="formulario__input" required>
         
         
@@ -31,7 +31,7 @@
             <option value="Barbero Elis">Barbero Elis</option>
         </select>
         
-        <label for="servicios" class="formulario__label">¿Cuál es el servicio que se desea realizar?</label>
+        <label for="servicio" class="formulario__label">¿Cuál es el servicio que se desea realizar?</label>
         <select id="servicio" name="listaservicios" class="formulario__input">
             <option>Corte de Cabello - $12.000</option>
             <option>Afeitado de la Barba - $12.000</option>
@@ -43,7 +43,7 @@
             <option>Combo 4 Corte+Barba+Peinado+Facial - $40.000</option>
             <option>Alineacón de cejas con cuchilla - $5.000</option>
         </select>
-        
+        <div id="respuesta"></div>
 
         <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
        <!-- https://api.whatsapp.com/send?phone=573105010573&text=*_Barberia%20Lider_*%20%0AReservas%0A%0A*%C2%BFCual%20es%20tu%20nombre?*%0A"Nombres"%20%0A*Barbero%20de%20preferencia*%0A"Barbero"%20%0A -->

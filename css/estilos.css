@@ -5,6 +5,9 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    background-image: url(fondo.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
     
 }
 .formulario {

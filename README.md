@@ -10,3 +10,5 @@ Luego de darle click al boton de enviar te llegará al whatsapp de tu negocio to
 Puedes modificar los campos a tu gusto y necesidades.
 
 
+Si quieres probar como funciona llena el formulario aquí: https://elisperez.github.io/formulario/
+Yo estaré del otro lado respondiendo tus dudas por mi Whatsapp :-)

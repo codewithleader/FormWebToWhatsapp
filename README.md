@@ -1,4 +1,4 @@
-# formulario WEB que envía los datos al Whatsapp de tu negocio
+# Formulario WEB que envía los datos al Whatsapp de tu negocio
 Formulario de reservas para Barbería o para cualquier negocio que use Whatsapp para comunicarse con sus clientes.
 
 Si en tu Whatsapp te llegan mensajes como "hola", "están atendiendo?"... o similares

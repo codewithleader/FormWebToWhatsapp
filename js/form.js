@@ -5,10 +5,10 @@ document.querySelector("#submit").addEventListener("click", e => {
   let telefono = "573136283643";
 
   let cliente = document.querySelector("#cliente").value;
-  let fecha = document.querySelector("#fecha").value;
-  let hora = document.querySelector("#hora").value;
-  let empleado = document.querySelector("#empleado").value;
-  let servicio = document.querySelector("#servicio").value;
+  let direccion = document.querySelector("#direccion").value;
+  let color = document.querySelector("input[name='colors']:checked").value;
+  let piezas = document.querySelector("#piezas").value;
+  let tel_cliente = document.querySelector("#telefono_cliente").value;
   let resp = document.querySelector("#respuesta");
 
   resp.classList.remove("fail");
@@ -19,16 +19,16 @@ document.querySelector("#submit").addEventListener("click", e => {
 		*Reservas*%0A%0A
 		*¿Cuál es tu nombre?*%0A
 		${cliente}%0A
-		*Indica la fecha de tu reserva*%0A
-		${fecha}%0A
-		*Indica la hora de tu reserva*%0A
-		${hora}%0A
-		*Empleado de preferencia*%0A
-		${empleado}%0A
-		*¿Cuál es el servicio que se desea realizar?*%0A
-		${servicio}`;
+		*¿Cuál es tu dirección?*%0A
+		${direccion}%0A
+		*Indica la variante del producto:*%0A
+		${color}%0A
+		*Cantidad o Número de piezas:*%0A
+		${piezas}%0A
+		*Teléfono de contacto:*%0A
+		${tel_cliente}`;
 
-  if (cliente === "" || fecha === "" || hora === "") {
+  if (cliente === "" || direccion === "" || color === "" || piezas === "" || tel_cliente === "") {
     resp.classList.add("fail");
     resp.innerHTML = `Faltan algunos datos, ${cliente}`;
     return false;

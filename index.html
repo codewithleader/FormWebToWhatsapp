@@ -2,10 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Reservas MI NEGOCIO</title>
     <link rel="stylesheet" href="css/estilos.css" />
@@ -28,39 +25,40 @@
         placeholder="Indica cuál es tu nombre completo"
       />
 
-      <label for="fecha" class="formulario__label"
-        >Indica la fecha de tu reserva</label
-      >
+      <label for="direccion" class="formulario__label">¿Cuál es tu dirección?</label>
       <input
-        id="fecha"
-        type="date"
+        id="direccion"
+        type="text"
         class="formulario__input"
-        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+        placeholder="Indica cuál es tu dirección"
       />
 
-      <label for="hora" class="formulario__label"
-        >Indica la hora de tu reserva</label
-      >
-      <input id="hora" type="time" class="formulario__input" />
+      <label name="color">Indica la variante del producto:</label>
+      <input type="radio" id="amarillo" name="colors" value="Amarillo" />
+      <label for="amarillo">Amarillo</label><br />
+      <input type="radio" id="azul" name="colors" value="Azul" />
+      <label for="azul">Azul</label><br />
+      <input type="radio" id="rojo" name="colors" value="Rojo" />
+      <label for="rojo">Rojo</label><br />
+      <input type="radio" id="magenta" name="colors" value="Magenta" />
+      <label for="magenta">Magenta</label>
+      <br />
+      <br />
 
-      <label for="empleado" class="formulario__label"
-        >EMPLEADO de preferencia</label
-      >
-      <select id="empleado" name="listaempleados" class="formulario__input">
-        <option>EMPLEADO 1</option>
-        <option>EMPLEADO 2</option>
-      </select>
-
-      <label for="servicio" class="formulario__label"
-        >¿Cuál es el servicio que se desea realizar?</label
-      >
-      <select id="servicio" name="listaservicios" class="formulario__input">
-        <option>SERVICIO 1 - $VALOR</option>
-        <option>SERVICIO 2 - $VALOR</option>
-        <option>SERVICIO 3 - $VALOR</option>
-        <option>SERVICIO 4 - $VALOR</option>
-        <option>SERVICIO 5 - $VALOR</option>
-      </select>
+      <label for="piezas" class="formulario__label">Cantidad o Número de piezas:</label>
+      <input
+        id="piezas"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica la cantidad de piezas"
+      />
+      <label for="telefono_cliente" class="formulario__label">Teléfono de contacto:</label>
+      <input
+        id="telefono_cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica tu teléfono de contacto"
+      />
 
       <div id="respuesta"></div>
 

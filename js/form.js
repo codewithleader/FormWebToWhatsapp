@@ -2,19 +2,19 @@ document.querySelector("#submit").addEventListener("click", e => {
   e.preventDefault();
 
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
-  let telefono = "573136283643";
+  const telefono = "573136283643";
 
-  let cliente = document.querySelector("#cliente").value;
-  let fecha = document.querySelector("#fecha").value;
-  let hora = document.querySelector("#hora").value;
-  let empleado = document.querySelector("#empleado").value;
-  let servicio = document.querySelector("#servicio").value;
-  let resp = document.querySelector("#respuesta");
+  const cliente = document.querySelector("#cliente").value;
+  const fecha = document.querySelector("#fecha").value;
+  const hora = document.querySelector("#hora").value;
+  const empleado = document.querySelector("#empleado").value;
+  const servicio = document.querySelector("#servicio").value;
+  const resp = document.querySelector("#respuesta");
 
   resp.classList.remove("fail");
   resp.classList.remove("send");
 
-  let url = `https://api.whatsapp.com/send?phone=${telefono}&text=
+  const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
 		*_MI NEGOCIO_*%0A
 		*Reservas*%0A%0A
 		*¿Cuál es tu nombre?*%0A

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botón a Whatsapp</title>
+  </head>
+  <body>
+    <button id="mi-button">Más info</button>
+    <script>
+      document.querySelector('#mi-button').addEventListener('click', e => {
+        e.preventDefault();
+
+        //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
+        const telefono = '573136283643';
+
+        const href = window.location.href;
+
+        let url = `https://api.whatsapp.com/send?phone=${telefono}&text=
+                  *_MI NEGOCIO_*%0A
+                  *¡Hola!*%0A%0A
+                  *Necesito mas info*%0A
+                  ${href}%0A
+                  *Gracias*%0A
+                  `;
+
+        window.open(url);
+      });
+    </script>
+  </body>
+</html>

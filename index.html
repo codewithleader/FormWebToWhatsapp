@@ -1,71 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Reservas MI NEGOCIO</title>
-    <link rel="stylesheet" href="css/estilos.css" />
-  </head>
-  <body>
-    <form action="" class="formulario">
-      <img src="logo.jpg" class="imgLogo" />
 
-      <h1 class="formulario__titulo">MI NEGOCIO</h1>
-      <h3 class="formulario__subtitulo">Reservas</h3>
-      <p class="formulario__parrafo">
-        Llena este pequeño formulario para agendar tu cita en MI NEGOCIO.
-      </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Reservas MI NEGOCIO</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
 
-      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
-      <input
-        id="cliente"
-        type="text"
-        class="formulario__input"
-        placeholder="Indica cuál es tu nombre completo"
-      />
+<body>
+  <form action="" class="formulario">
+    <img src="logo.jpg" class="imgLogo" />
 
-      <label for="fecha" class="formulario__label"
-        >Indica la fecha de tu reserva</label
-      >
-      <input
-        id="fecha"
-        type="date"
-        class="formulario__input"
-        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
-      />
+    <h1 class="formulario__titulo">Gracias por su interés en nuestros productos.</h1>
+    <h3 class="formulario__subtitulo">&nbsp;</h3>
+    <h3 data-fontsize="15" align="center" data-lineheight="27">Por favor para poder atender a su solicitud le
+      solicitamos llenar este formulario.</h3>
+    <p class="formulario__parrafo">&nbsp;</p>
 
-      <label for="hora" class="formulario__label"
-        >Indica la hora de tu reserva</label
-      >
-      <input id="hora" type="time" class="formulario__input" />
+    <label for="nombre" class="formulario__label">Nombre y apellido</label>
+    <input id="nombre" type="text" class="formulario__input" placeholder="nombre" />
 
-      <label for="empleado" class="formulario__label"
-        >EMPLEADO de preferencia</label
-      >
-      <select id="empleado" name="listaempleados" class="formulario__input">
-        <option>EMPLEADO 1</option>
-        <option>EMPLEADO 2</option>
-      </select>
+    <label for="razonsocial" class="formulario__label">Razón Social</label>
+    <input id="razonsocial" type="text" class="formulario__input" placeholder="razonsocial" />
 
-      <label for="servicio" class="formulario__label"
-        >¿Cuál es el servicio que se desea realizar?</label
-      >
-      <select id="servicio" name="listaservicios" class="formulario__input">
-        <option>SERVICIO 1 - $VALOR</option>
-        <option>SERVICIO 2 - $VALOR</option>
-        <option>SERVICIO 3 - $VALOR</option>
-        <option>SERVICIO 4 - $VALOR</option>
-        <option>SERVICIO 5 - $VALOR</option>
-      </select>
+    <label for="CUIT" class="formulario__label">CUIT</label>
+    <input id="CUIT" type="text" class="formulario__input" placeholder="CUIT" />
 
-      <div id="respuesta"></div>
+    <label for="nombrecomercio" class="formulario__label">Nombre de fantasía del comercio</label>
+    <input id="nombrecomercio" type="text" class="formulario__input" placeholder="nombrecomercio" />
 
-      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
-    </form>
-    <script src="js/form.js"></script>
-  </body>
+    <label for="direccion" class="formulario__label">Dirección del comercio</label>
+    <input id="direccion" type="text" class="formulario__input" placeholder="direccion" />
+
+    <label for="localidad" class="formulario__label">Localidad</label>
+    <input id="localidad" type="text" class="formulario__input" placeholder="localidad" />
+
+    <label for="provincia" class="formulario__label">Provincia</label>
+    <input id="provincia" type="text" class="formulario__input" placeholder="provincia" />
+
+    <label for="telefono" class="formulario__label">Teléfono</label>
+    <input id="telefono" type="text" class="formulario__input" placeholder="telefono" />
+
+    <label for="email" class="formulario__label">Email</label>
+    <input id="email" type="text" class="formulario__input" placeholder="email" />
+
+    <label for="local" class="formulario__label">Por favor marque lo que corresponda</label>
+    <select id="local" name="local" class="formulario__input">
+      <option>Taller</option>
+      <option>Distribuidor</option>
+      <option>Negocio</option>
+      <option>Otro</option>
+    </select>
+
+    <div id="respuesta"></div>
+
+    <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+  </form>
+  <script src="js/form.js"></script>
+</body>
+
 </html>

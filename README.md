@@ -17,3 +17,13 @@ Puedes modificar los campos a tu gusto y necesidades.
 Si quieres probar como funciona llena el formulario aquí: [https://codewithleader.github.io/FormWebToWhatsapp/](https://codewithleader.github.io/FormWebToWhatsapp/)
 
 Yo estaré del otro lado respondiendo tus dudas por mi Whatsapp :-)
+
+# PASOS PARA AGREGAR A TU WORDPRESS
+
+1. En el dashboard de WordPress ve a Páginas y crea una llamada "formulario"
+2. Agrega tu logo en "Imagen destacada" (opcional)
+3. Personaliza el texto en el archivo `page-formulario.php`.
+4. Sube el archivo `page-formulario.php` a `/httpdocs/wp-content/themes/NOMBRE-DE-TU-TEMA`.
+5. Visita la pagina /formulario y listo! (https://tu-sitio/formulario)
+6. Deja tu estrellita 🤩
+7. Avísame si algo te salió mal 🤔 [AQUÍ](https://codewithleader.github.io/FormWebToWhatsapp/)

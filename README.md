@@ -22,8 +22,8 @@ Yo estaré del otro lado respondiendo tus dudas por mi Whatsapp :-)
 
 1. En el dashboard de WordPress ve a Páginas y crea una llamada "formulario"
 2. Agrega tu logo en "Imagen destacada" (opcional)
-3. Personaliza el texto en el archivo `page-formulario.php`.
-4. Sube el archivo `page-formulario.php` a `/httpdocs/wp-content/themes/NOMBRE-DE-TU-TEMA`.
+3. Personaliza el texto en el archivo `page-formulario.php`. o si prefieres usa la `opcion2/page-formulario.php`
+4. Sube el archivo `page-formulario.php` (o el que está en /option2) a `/httpdocs/wp-content/themes/NOMBRE-DE-TU-TEMA`.
 5. Visita la pagina /formulario y listo! (https://tu-sitio/formulario)
 6. Deja tu estrellita 🤩
 7. Avísame si algo te salió mal 🤔 [AQUÍ](https://codewithleader.github.io/FormWebToWhatsapp/)
